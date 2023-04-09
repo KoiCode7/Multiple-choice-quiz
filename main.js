@@ -59,6 +59,7 @@
 
 
 
+  
   // After refactoring
   function render(quiz) {
     const main = document.querySelector("main");
@@ -90,9 +91,15 @@
   }
 
   const quizzes = [
-    ["Q1: What's your answer?", "Choice: A", "Choice: B", "Choice: C", 0],
-    ["Q2: What's your answer?", "Choice: A", "Choice: B", "Choice: C", 1],
-    ["Q3: What's your answer?", "Choice: A", "Choice: B", "Choice: C", 2],
+    ["Q1: What is the capital of France?", "a) Berlin", "b) London", "c) Paris", 2],
+    ['Q2: Which planet is known as the "Red Planet"?', "a) Mars", "b) Jupiter", "c) Saturn", 0],
+    [
+      'Q3: Who painted the famous artwork "The Mona Lisa"?',
+      "a) Vincent van Gogh",
+      "b) Leonardo da Vinci",
+      "c) Pablo Picasso",
+      1,
+    ],
   ];
 
   quizzes.forEach((quiz) => {
